@@ -145,7 +145,7 @@
       <p id="loading-txt">Loading</p>
     </div>
   </div>
-  <div id="play-btn"><i class="iconfont" style="font-size: 40px;">&#xe617;</i></div>
+  <div id="play-btn"><i class="iconfont" style="font-size: 32px; animation-play-state: running;">&#127925;</i></div>
   <img class="load-img" onload="loadDone();pcTip()" src="./public/photo/1.png">
   <img class="load-img" onload="loadDone()" src="./public/photo/2.jpg">
   <img class="load-img" onload="loadDone()" src="./public/photo/3.jpg">
@@ -621,6 +621,7 @@
         clearInterval(loadTimer);
 
         var forEach = [].forEach;
+
 
         setTimeout(() => {
           document.getElementById('loading-mask').style.display = 'none'
